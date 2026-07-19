@@ -5,7 +5,7 @@
 ## 运行
 
 ```bash
-cd /Users/xuan.ai/Documents/develop/lumao/magicangle-dashboard
+cd magicangle-dashboard
 cp .env.example .env
 ./run.sh
 ```
@@ -35,3 +35,11 @@ OpenAPI 文档：`http://127.0.0.1:8081/docs`
 ```bash
 python3 -m unittest discover -s tests -v
 ```
+
+## 赏点小钱
+
+```
+EVM 地址：0xd158387440cc9907008c6f7d3fee1c458e635009
+```
+
+![](aa1ab3b5ea9e03fc9945600b36915a96.jpg)
