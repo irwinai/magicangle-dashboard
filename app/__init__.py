@@ -1,0 +1,1 @@
+"""MagicAngle local aggregation service."""

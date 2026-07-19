@@ -1,0 +1,14 @@
+[project]
+name = "magicangle-api"
+version = "0.1.0"
+description = "Local read-only API aggregation for authorized MagicAngle order data"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1.0",
+  "httpx>=0.28,<1.0",
+  "uvicorn[standard]>=0.34,<1.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
