@@ -31,8 +31,13 @@ class UpstreamQuery(BaseModel):
 
 
 @app.get("/health")
-async def health() -> dict[str, str]:
-    return {"status": "ok"}
+async def health() -> dict[str, str | bool]:
+    return {
+        "status": "ok",
+        "tokenConfigured": bool(settings.token),
+        "userIdConfigured": bool(settings.user_id),
+        "storeIdConfigured": bool(settings.store_id),
+    }
 
 
 async def handle(coroutine: Any) -> dict[str, Any]:

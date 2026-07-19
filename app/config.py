@@ -48,7 +48,7 @@ class Settings:
             client_type=os.getenv("MAGICANGLE_CLIENT_TYPE", "web"),
             origin=os.getenv("MAGICANGLE_ORIGIN", "https://hfive.cfgsdok.com"),
             referer=os.getenv("MAGICANGLE_REFERER", "https://hfive.cfgsdok.com/"),
-            user_agent=os.getenv("MAGICANGLE_USER_AGENT", "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5.2 Mobile/15E148 Safari/604.1"),
+            user_agent=os.getenv("MAGICANGLE_USER_AGENT") or "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5.2 Mobile/15E148 Safari/604.1",
             cors_origins=[item.strip() for item in origins.split(",") if item.strip()],
             timeout_seconds=float(os.getenv("UPSTREAM_TIMEOUT_SECONDS", "15")),
         )
